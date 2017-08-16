@@ -14,20 +14,15 @@ class App extends Component {
     }
   }
 
-
-
-  /*
   componentDidMount() {
     console.log('react is running...')
-  }*/
+  }
 
   componentWillMount() {
     this.getText();
   }
 
   getText() {
-
-
 
     axios.get('http://hipsterjesus.com/api?paras=' + this.state.paras + '&html=' + this.state.html)
       .then((response) => {
