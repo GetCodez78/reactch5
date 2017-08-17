@@ -22242,12 +22242,12 @@
 	    return _this;
 	  }
 
-	  /*
-	  componentDidMount() {
-	    console.log('react is running...')
-	  }*/
-
 	  _createClass(App, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      console.log('react is running...');
+	    }
+	  }, {
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      this.getText();
@@ -23919,7 +23919,7 @@
 	      return _react2.default.createElement(
 	        "div",
 	        null,
-	        _react2.default.createElement("input", { type: "number", value: this.props.value, onChange: this.onChange.bind(this) })
+	        _react2.default.createElement("input", { type: "number", value: this.state.value, onChange: this.onChange.bind(this) })
 	      );
 	    }
 	  }]);
@@ -23970,7 +23970,6 @@
 	    _createClass(Select, [{
 	        key: "onChange",
 	        value: function onChange(e) {
-
 	            this.setState({ value: e.target.value }, function () {
 	                this.props.onChange(this.state.value);
 	            });
@@ -23987,7 +23986,7 @@
 	                    _react2.default.createElement(
 	                        "option",
 	                        { value: "true" },
-	                        "True"
+	                        "Yes"
 	                    ),
 	                    _react2.default.createElement(
 	                        "option",
