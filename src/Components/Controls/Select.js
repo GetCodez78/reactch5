@@ -16,7 +16,7 @@ class Select extends Component {
         return (
             <div>
                 <select onChange={this.onChange.bind(this)}>
-                    <option value="true">True</option>
+                    <option value="true">Yes</option>
                     <option value="false">No</option>
                 </select>
             </div>
