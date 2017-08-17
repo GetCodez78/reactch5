@@ -1,7 +1,10 @@
 module.exports = {
   entry: './src/index.js',
   output: {
-    path:'./dist',
+    /*mac code*/
+    /*path:'./dist',*/
+    /*windows code*/
+    path: __dirname + '/dist',
     filename:'bundle.js'
   },
   module: {

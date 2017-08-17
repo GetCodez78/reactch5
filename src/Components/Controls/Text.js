@@ -17,7 +17,7 @@ class Text extends Component {
   render() {
     return (
       <div>
-        <input type="number" value={this.props.value} onChange={this.onChange.bind(this)} />
+        <input type="number" value={this.state.value} onChange={this.onChange.bind(this)} />
       </div>
     );
   }
